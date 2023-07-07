@@ -2,31 +2,36 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-    @media screen and (max-width: 375px) {
-      body{
-        background-color: red;
-      }
+
+    @media screen and (min-width: 150px) and (max-width: 375px) {
+      #textMain {font-size: 8px;}
+      #textSecond {font-size: 4px;}
+      .mainBody {margin-left: 26.96%; margin-right: 26.96%; border-radius: 4%; margin-top: 24.59%;}
     }
-
-   
-
-    .attribution { font-size: 12px; text-align: center; font-family: 'Outfit', sans-serif;bottom:  10px; position: absolute;}
-    .attribution a { color: hsl(228, 100%, 50%); }
-    body { background-color: rgb(213, 225, 239); }
-    .mainBody { background-color: white ; margin-left: 42.96%; margin-right: 42.96%; border-radius: 4%; margin-top: 10.59%; box-shadow: 0px 15px rgba(206, 206, 206, 0.3);}
-    img{ width: 91.02%; margin-left: 5%; margin-right: 5%; margin-top: 5%; border-radius: 3%; }
-    #textMain {font-size: 17px; font-family: 'Outfit', sans-serif;  font-weight: 900; text-align: center;margin-top: 16px; color:hsl(218, 44%, 22%);}
-    #textSecond {font-size: 12px; font-family: 'Outfit', sans-serif;font-weight: 400;text-align: center; color: hsl(213, 6%, 64%);  padding-bottom: 36px;}
-    
+    @media screen and (min-width: 375px) and (max-width: 500px){
+      #textMain {font-size: 11px;}
+      #textSecond {font-size: 7px;}
+      .mainBody {margin-left: 30.96%; margin-right: 30.96%; border-radius: 4%; margin-top: 20.59%;}
+    }
+    @media screen and (min-width: 500px) and (max-width: 650px) {
+      #textMain {font-size: 13px;}
+      #textSecond {font-size: 7px;}
+      .mainBody {margin-left: 35.96%; margin-right: 35.96%; border-radius: 4%; margin-top: 16.59%;}
+    }
+    @media screen and (min-width: 650px) and (max-width: 900px) {
+      #textMain {font-size: 14px;}
+      #textSecond {font-size: 9px;}
+      .mainBody {margin-left: 40.96%; margin-right: 40.96%; border-radius: 4%; margin-top: 12.59%;}
+    }
 
   </style>
 </head>
